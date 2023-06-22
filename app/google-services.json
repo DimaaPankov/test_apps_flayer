@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202301708058",
+    "project_id": "test-a5ed0",
+    "storage_bucket": "test-a5ed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202301708058:android:e64d327a545065f354bea3",
+        "android_client_info": {
+          "package_name": "com.fio.frock.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202301708058-loht3ct578shmjtjtg30f3hevofo03ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbviIVJAi7MggG7pZnY6tbguSsv0ftfoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202301708058-loht3ct578shmjtjtg30f3hevofo03ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

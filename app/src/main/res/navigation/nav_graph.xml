@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loudingFragment2">
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.fio.frock.game.fragment.OneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_oneFragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+        <action
+            android:id="@+id/action_oneFragment_to_foureFragment"
+            app:destination="@id/foureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.fio.frock.game.fragment.TwoFragment"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_twoFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_twoFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.fio.frock.game.fragment.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_threeFragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+        <action
+            android:id="@+id/action_threeFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foureFragment"
+        android:name="com.fio.frock.game.fragment.FoureFragment"
+        android:label="fragment_foure"
+        tools:layout="@layout/fragment_foure" >
+        <action
+            android:id="@+id/action_foureFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_foureFragment_to_fiveFragment2"
+            app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_foureFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.fio.frock.game.fragment.FiveFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_fiveFragment_to_foureFragment"
+            app:destination="@id/foureFragment" />
+        <action
+            android:id="@+id/action_fiveFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sevenFragment"
+        android:name="com.fio.frock.game.fragment.SevenFragment"
+        tools:layout="@layout/fragment_seven"
+        android:label="SevenFragment" >
+        <action
+            android:id="@+id/action_sevenFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_sevenFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loudingFragment2"
+        android:name="com.fio.frock.game.black.LoudingFragment"
+        tools:layout="@layout/louding_fragment"
+        android:label="LoudingFragment" >
+        <action
+            android:id="@+id/action_loudingFragment2_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_loudingFragment2_to_webViewFragment2"
+            app:destination="@id/webViewFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment2"
+        android:name="com.fio.frock.game.black.WebViewFragment"
+        tools:layout="@layout/web_view_fragment"
+        android:label="WebViewFragment" >
+        <action
+            android:id="@+id/action_webViewFragment2_to_oneFragment"
+            app:destination="@id/oneFragment" />
+    </fragment>
+
+</navigation>
